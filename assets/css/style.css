@@ -1430,6 +1430,31 @@ header.style-1 .for-mobile-menu .primary-btn1 {
   -o-object-fit: cover;
      object-fit: cover;
 }
+.trip-section .trip-single .trip-image .tag {
+  position: absolute;
+  top: 10px;
+  left: -14px;
+  z-index: 9;
+}
+.trip-section .trip-single .trip-image .tag span {
+  background-color: rgb(44, 50, 62);
+  font-size: 14px;
+  font-weight: 500;
+  font-family: var(--font-roboto);
+  padding: 5px 15px;
+  color: #fff;
+  display: inline-block;
+  position: relative;
+}
+.trip-section .trip-single .trip-image .tag span::after {
+  content: "";
+  position: absolute;
+  left: 0px;
+  top: 31px;
+  border-right: 15px solid #555;
+  border-bottom: 15px solid transparent;
+  z-index: -6;
+}
 .trip-section .trip-single .trip-image .trip-top {
   position: absolute;
   bottom: 10px;
@@ -1442,31 +1467,6 @@ header.style-1 .for-mobile-menu .primary-btn1 {
   visibility: hidden;
   transform-origin: bottom;
   transform: scaleY(0);
-}
-.trip-section .trip-single .trip-image .trip-top .tag {
-  position: absolute;
-  top: 10px;
-  left: -14px;
-  z-index: 9;
-}
-.trip-section .trip-single .trip-image .trip-top .tag span {
-  background-color: rgb(44, 50, 62);
-  font-size: 14px;
-  font-weight: 500;
-  font-family: var(--font-roboto);
-  padding: 5px 15px;
-  color: #fff;
-  display: inline-block;
-  position: relative;
-}
-.trip-section .trip-single .trip-image .trip-top .tag span::after {
-  content: "";
-  position: absolute;
-  left: 0px;
-  top: 31px;
-  border-right: 15px solid #555;
-  border-bottom: 15px solid transparent;
-  z-index: -6;
 }
 .trip-section .trip-single .trip-image .trip-top a {
   background: rgba(255, 255, 255, 0.7);

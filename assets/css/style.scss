@@ -1688,6 +1688,32 @@ header.style-1 {
                 min-height: 300px;
                 object-fit: cover;
             }
+            .tag {
+                position: absolute;
+                top: 10px;
+                left: -14px;
+                z-index: 9;
+                span {
+                    background-color: rgb(44, 50, 62);
+                    font-size: 14px;
+                    font-weight: 500;
+                    font-family: var(--font-roboto);
+                    padding: 5px 15px;
+                    color: #fff;
+                    display: inline-block;
+                    position: relative;
+                    
+                    &::after {
+                        content: "";
+                        position: absolute;
+                        left: 0px;
+                        top: 31px;
+                        border-right: 15px solid #555;
+                        border-bottom: 15px solid transparent;
+                        z-index: -6;
+                    }
+                }
+            }
 
             .trip-top {
                 position: absolute;
@@ -1702,32 +1728,7 @@ header.style-1 {
                 visibility: hidden;
                 transform-origin: bottom;
                 transform: scaleY(0);
-                .tag {
-                    position: absolute;
-                    top: 10px;
-                    left: -14px;
-                    z-index: 9;
-                    span {
-                        background-color: rgb(44, 50, 62);
-                        font-size: 14px;
-                        font-weight: 500;
-                        font-family: var(--font-roboto);
-                        padding: 5px 15px;
-                        color: #fff;
-                        display: inline-block;
-                        position: relative;
-                        
-                        &::after {
-                            content: "";
-                            position: absolute;
-                            left: 0px;
-                            top: 31px;
-                            border-right: 15px solid #555;
-                            border-bottom: 15px solid transparent;
-                            z-index: -6;
-                        }
-                    }
-                }
+                
                 a {
                     background: rgba(255, 255, 255, 0.7);
                     max-width: 80%;
