@@ -1613,7 +1613,7 @@ header.style-1 {
             .tag {
                 position: absolute;
                 top: 10px;
-                left: -10px;
+                left: -14px;
                 z-index: 9;
                 span {
                     background-color: rgb(44, 50, 62);
@@ -1625,15 +1625,15 @@ header.style-1 {
                     display: inline-block;
                     position: relative;
                     
-                    // &::after {
-                    //     content: "";
-                    //     position: absolute;
-                    //     left: 0px;
-                    //     top: 31px;
-                    //     border-right: 25px solid #555;
-	                //     border-bottom: 25px solid transparent;
-                    //     z-index: -1;
-                    // }
+                    &::after {
+                        content: "";
+                        position: absolute;
+                        left: 0px;
+                        top: 31px;
+                        border-right: 15px solid #555;
+                        border-bottom: 15px solid transparent;
+                        z-index: -6;
+                    }
                 }
             }
 
