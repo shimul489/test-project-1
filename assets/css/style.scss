@@ -1682,7 +1682,7 @@ header.style-1 {
 
         .trip-image {
             position: relative;
-            overflow: hidden;
+            // overflow: hidden;
             img{
                 transition: 0.46s ease-in-out;
                 min-height: 300px;
@@ -1766,11 +1766,6 @@ header.style-1 {
                 opacity: 1;
                 visibility: visible;
                 transform: scaleY(1.125);
-            }
-            &:hover img{
-                
-                transform: scale(1.125);
-                
             }
         }
 

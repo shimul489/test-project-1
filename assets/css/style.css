@@ -1422,7 +1422,6 @@ header.style-1 .for-mobile-menu .primary-btn1 {
 }
 .trip-section .trip-single .trip-image {
   position: relative;
-  overflow: hidden;
 }
 .trip-section .trip-single .trip-image img {
   transition: 0.46s ease-in-out;
@@ -1500,9 +1499,6 @@ header.style-1 .for-mobile-menu .primary-btn1 {
   opacity: 1;
   visibility: visible;
   transform: scaleY(1.125);
-}
-.trip-section .trip-single .trip-image:hover img {
-  transform: scale(1.125);
 }
 .trip-section .trip-single .trip-content .trip-bottom {
   margin-top: 50px;
